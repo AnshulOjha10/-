@@ -62,7 +62,7 @@ html{
 }
 
 .main-content img{
-    width: 18rem;
+    /* width: 18rem; */
     /* border: 2px solid black; */
     /* border-radius: 124rem; */
     box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
@@ -168,4 +168,11 @@ html{
     background: whitesmoke;
     mix-blend-mode: difference;
     transition: all linear 0.2s;
+}
+
+.main-image{
+    height: 270px;
+    width: 270px;
+    overflow: hidden;
+    object-fit: cover;
 }
