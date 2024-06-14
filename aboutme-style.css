@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(#024d5a,#091813);
+}
+
+.img-content{
+    width: 320px;
+    height: 500px;
+    background-image: url('https://i.pinimg.com/736x/bb/fa/a8/bbfaa8e365c7ff7479f7b358fa4edb89.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #091813;
+    border-radius: 2rem;
+    box-shadow:  20px 20px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: 400ms ease-in-out;
+}
+
+.img-content:hover{
+    background-image: url('https://i.pinimg.com/736x/c0/82/70/c08270e16ba5de79ff8ca215576ceecd.jpg');
+    background-size: cover;
+    /* transform: rotate(35deg); */
+    z-index: 1;
+}   
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-content h1{
+   color: rgb(129, 211, 129);
+   color: #EFB11d;  
+}   
+
+.text-content{
+    width: 600px;
+    color: antiquewhite;
+}
+
+.main{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    column-gap: 6rem;
+}
+
+.information h3{
+    color: wheat;
+}
+
+.thanks-wla{
+    margin-top: 5px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid rgb(90, 79, 79);
+}
+
+.information p{
+    /* color: rgb(167, 167, 70); */
+    color: antiquewhite;
+}
+.information span{
+    font-size: large;
+}
+
+.text-content h1{
+    color: #EFB11d;
+}
+
+
+button {
+    text-decoration: none;
+    padding: 12px 12px;
+    border-radius: 5rem;
+    background: transparent;
+    transition: 500ms; 
+    background: #EFB11d;
+    margin-top: 12px;
+}
+
+button:hover{
+    text-decoration: none;
+    padding: 12px 12px;
+    border-radius: 5rem;
+}
+
+
+button a{
+    text-decoration: none;
+    padding: 12px 12px;
+    border-radius: 5rem;
+     color: black;
+}
+button a:hover{
+    text-decoration: none;
+    padding: 12px 12px;
+    border-radius: 5rem;
+   color: white;
+}
+
+.linked{
+    display: flex;
+    gap:10px;
+    margin-top: 1rem;
+}
+
+.linked a{
+    text-decoration: none;
+    color: white ;
+    font-family: "Poetsen One", 
+}       
+
+#redirect{
+    font-size: 25px;
+}
+
+.for-inline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: -25px;
+}

@@ -1,0 +1,123 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(#024d5a,#091813);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px; */
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container .cards{
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    /* background-image: url('https://wallpapers.com/images/featured/one-piece-phone-beu8vxkxxywm5vsf.jpg'); */
+    background-size: cover;
+    /* background-position: -100px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    margin-top: 95px;
+}
+
+.container .cards .content{
+    padding: 20px;   
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .cards:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .cards .content h2{
+    position: absolute;
+    font-size: 8em;
+    top: -40px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.849);
+    pointer-events: none;
+    z-index: -100;
+}
+
+.container .cards .content h3{
+    font-size: 1.8em;
+    color: antiquewhite;
+    /* font-weight: 300; */
+    z-index: 100;
+}
+.container .cards .content p{
+    font-size: 1em;
+    color: antiquewhite;
+    z-index: 100;
+    font-weight: 300;
+}
+
+.container .cards .content a{
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#first{
+    background-image: url('anime-site.jpg');
+    background-position: center;
+}
+
+#second{
+    background-image: url('branding-img.jpg');
+    background-size: cover;
+}
+
+#branding-site{
+    color: black;
+    font-weight: 400;
+}
+
+#third{
+    background-image: url('videoediting.jpg');
+    background-position: center;
+}
+
+.text{
+    font-size: 7em;
+    color: #efb11d;
+    z-index: -100;
+    font-family: "Poppins", sans-serif;
+    top: -18px;
+    position: absolute;
+    text-shadow: 2px 2px #ff0000;
+    font-weight: 600;
+}
+
+.text p{
+    font-size: larger;
+}
