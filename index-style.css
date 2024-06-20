@@ -7,9 +7,16 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    overflow: hidden;
 }
 
 .container{
+    position: relative;
     background: radial-gradient(#024d5a,#091813);
     height: 100vh;
     width: 100%;
@@ -175,4 +182,19 @@ html{
     width: 270px;
     overflow: hidden;
     object-fit: cover;
+}
+
+.bubblecursor{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all linear 0.2s;
+    overflow: hidden;
 }
